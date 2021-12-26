@@ -9,7 +9,6 @@ namespace GameOfLife
 {
     class Program
     {
-
         public static void Paint(bool[,] field)
         {
             Console.SetCursorPosition(0, 0);
@@ -76,6 +75,7 @@ namespace GameOfLife
             Console.ResetColor();
             Console.Clear();
         }
+        
         static void ChooseCreatures()
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -201,11 +201,9 @@ namespace GameOfLife
                 field[X + 1, Y + 1] = true;
             }
         }
-
-
+        
         public class StrangeCreature
         {
-
             public readonly int X;
             public readonly int Y;
 
@@ -229,7 +227,6 @@ namespace GameOfLife
                 field[X + 2, Y - 1] = true;
             }
         }
-
         
         public class FirsEater 
         {
